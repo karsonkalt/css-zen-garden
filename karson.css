@@ -1,0 +1,316 @@
+@import url(https://necolas.github.io/normalize.css/3.0.3/normalize.css);
+
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+
+@keyframes blink {
+  0% { opacity:100%; }
+  50% { opacity:0; }
+  100% { opacity: 100%; }
+}
+
+@keyframes color_pulse { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+* {
+    font-family: 'Inconsolata';
+/*    border:1px solid blue;*/
+}
+
+abbr[title] {
+    border-bottom:none;
+}
+
+body {
+    margin:0;
+    font-family: sans-serif;
+     background-color:#F7F7F7;
+    overflow-x:hidden;
+}
+
+h3 {
+    text-transform:uppercase;
+}
+
+section.intro {
+    background-image:linear-gradient( to bottom, #F7F7F7, #121212);
+}
+
+header {
+    padding: calc(100vw / 10 + 20px);
+    background-color:white;
+    font-family: 'Inconsolata';
+    color:black;
+    background-image: url(window.svg);
+    background-size:100px;
+    background-repeat:no-repeat;
+    font-weight: 400;
+    border: 1px solid black;
+    margin: 100px;
+    height: 90%;
+    box-shadow: 0px 0px 28px -6px rgba(0,0,0,0.75);
+}
+
+header h1 {
+    display:inline;
+    padding:0;
+    font-size: calc((100vw / 50) + 42px);
+}
+
+header h1::after {
+    content: ": $";
+}
+
+header h2 {
+    display:inline;
+    padding:0;
+    font-size: calc((100vw / 50) + 42px);
+}
+
+header h2::after {
+    content: "_";
+    animation: 1.3s linear 0s infinite blink;
+}
+
+div.summary {
+    color:#636363;
+    padding: 0 calc(100vw / 10 + 120px) 75vh calc(100vw / 10 + 120px);
+    font-family: 'Inconsolata';
+    font-weight: 400;
+    font-size:18px;
+    line-height:1.5rem;
+}
+
+div.summary a {
+    border-bottom: 1px solid #636363;
+    color:#636363;
+    padding: 0 5px;
+    text-decoration:none;
+    transition: .25s;
+    display:inline-block;
+}
+
+div.summary a:hover {
+    background-color:rgba(0,0,0,.05);
+    color:black;
+    border-bottom: 1px solid black;
+}
+
+div.preamble {
+    background:
+        
+        linear-gradient(
+            to bottom,
+            rgba(255,255,255,1) 0%,        
+            rgba(255,255,255,1) 20%,
+            rgba(255,255,255,.5) 50%,
+            rgba(255,255,255,0) 70%,
+            rgba(255,255,255,0) 100%),
+        
+        linear-gradient(
+            270deg,
+            #ff0000,
+            #006fff);
+    
+    background-size:150%;
+    animation: color_pulse 8s ease-in-out infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom:75vh;
+}
+
+div.preamble h3,
+div.benefits h3 {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    display:block;
+    font-weight:400;
+    width:500px;
+    padding:50px 50px;
+    box-sizing: border-box;
+    margin:0 auto;
+    font-size:32px;
+    text-align:center;
+    border-top:1px solid white;
+    border-bottom:1px solid white;
+}
+
+div.preamble p,
+div.benefits p {
+    -webkit-margin-after: 0;
+    -webkit-margin-before: 0;
+    width:500px;
+    padding:150px 50px;
+    box-sizing: border-box;
+    border-bottom:1px solid white;
+    margin:0 auto;
+    line-height: 1.5rem;
+}
+
+div.main {
+    background-color:#121212;
+    background:
+        
+        linear-gradient(
+            to bottom,
+            rgba(18,18,18,1) 0%,        
+            rgba(18,18,18,1) 20%,
+            rgba(18,18,18,.5) 50%,
+            rgba(18,18,18,0) 70%,
+            rgba(18,18,18,0) 100%),
+        
+        linear-gradient(
+            270deg,
+            #ff0000,
+            #006fff);
+    background-size:150%;
+    animation: color_pulse 8s ease-in-out infinite;
+    }
+
+div.explanation h3,
+div.participation h3,
+div.requirements h3,
+div.design-selection h3,
+aside.sidebar h3 {
+    margin-top:0;
+    font-size:32px;
+    font-weight:400;
+}
+
+div.explanation p,
+div.participation p,
+div.requirements p {
+    line-height:1.5rem;
+    border-left:1px solid white;
+    margin-bottom:2rem;
+    padding-left:1rem;
+}
+
+div.participation,
+div.explanation,
+div.requirements,
+aside.sidebar {
+    padding: calc(100vw / 10 + 20px);
+    background-color:rgba(255,255,255,.1);
+    font-family: 'Inconsolata';
+    color:white;
+    background-image: url(window-white.svg);
+    background-size:100px;
+    background-repeat:no-repeat;
+    font-weight: 400;
+    border: 1px solid white;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    height: 90%;
+    box-shadow: 0px 0px 28px -6px rgba(0,0,0,0.75);
+}
+
+div.participation a,
+div.requirements a,
+aside.sidebar a {
+    border-bottom: 1px solid white;
+    color:white;
+    padding: 0 5px;
+    text-decoration:none;
+    transition: .25s;
+    display:inline-block;
+}
+
+div.benefits {
+    margin:75vh auto;
+    color:white;
+}
+
+div.participation a:hover,
+div.requirements a:hover,
+aside.sidebar a:hover {
+    background-color:rgba(255,255,255,.1);
+}
+
+footer {
+    display:flex;
+    justify-content: space-between;
+    margin: 100px 100px 0 100px;
+    padding-bottom:100px;
+}
+
+footer a {
+    border: 1px solid white;
+    padding: 25px;
+    text-decoration:none;
+    color:white;
+    transition:.5s;
+}
+
+footer a:hover {
+    background-color: rgba(255,255,255,.1);
+}
+
+div.design-selection h3 {
+    color:black;
+}
+
+div.design-selection {
+    position:absolute;
+    top:150px;
+    left:calc(100vw - 50px);
+    padding-left:100px;
+    border:1px solid black;
+    width:1000px;
+    background-color:white;
+    box-shadow: 0px 0px 28px -6px rgba(0,0,0,0.75);
+    background-image: url(window.svg);
+    background-size:100px;
+    background-repeat:no-repeat;
+    padding: calc(100vw / 20 + 20px);
+    transition:.5s ease-in-out;
+}
+
+div.design-selection:hover {
+    left:calc(100vw - 500px);
+}
+
+div.design-selection ul,
+aside.sidebar ul {
+    list-style: none;
+    padding-left:0;
+    line-height:2rem;
+}
+
+div.design-selection a {
+    border-bottom: 1px solid black;
+    color:black;
+    padding: 2px 5px;
+    text-decoration:none;
+    display:inline;
+    transition: .5s;
+}
+
+div.design-selection a:hover {
+    background-color:rgba(0,0,0,.1);
+    padding: 2px 5px;
+    text-decoration:none;
+}
+
+div.design-selection a:first-of-type,
+aside.sidebar a:first-of-type {
+    padding-left:0;
+}
+
+aside.sidebar {
+    margin-top:100px;
+    padding-bottom:100px;
+    margin-bottom:0;
+}
+
+div.page-wrapper {
+    background-color:black;
+    padding-bottom:100px;
+}
+
+div.zen-resources {
+    padding-top: 100px;
+}
