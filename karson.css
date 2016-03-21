@@ -32,11 +32,7 @@ body {
     font-family: 'Inconsolata', sans-serif;
     background-color: #F7F7F7;
     overflow-x: hidden;
-}
-
-header {
-    min-width:300px;
-    max-width:700px;
+    min-width:600px;
 }
 
 h3 {
@@ -114,11 +110,14 @@ div.design-selection {
     border: 1px solid black;
     margin: 100px;
     box-shadow: 0px 0px 28px -6px rgba(0,0,0,0.75);
+    min-width:300px;
+    max-width:700px;
+    transition: margin .5s ease;
 }
 
 div.design-selection {
     position: absolute;
-    top: 110vh;
+    top: 60vh;
     left: calc(100vw - 150px);
     padding-left: 100px;
     width: 1000px;
@@ -150,6 +149,7 @@ div.requirements p {
 /*******************
 SPACED PARAGRAPHS
 *******************/
+
 div.preamble {
     background-size:150%;
     animation: color_pulse 8s ease-in-out infinite;
@@ -164,7 +164,8 @@ div.benefits h3 {
     -webkit-margin-after: 0;
 /*    display:block;*/
     font-weight:400;
-    width:500px;
+    max-width:500px;
+    min-width:300px;
     padding:50px 50px;
     box-sizing: border-box;
     margin:0 auto;
@@ -178,7 +179,8 @@ div.preamble p,
 div.benefits p {
     -webkit-margin-after: 0;
     -webkit-margin-before: 0;
-    width:500px;
+    max-width:500px;
+    min-width:300px;
     padding:150px 50px;
     box-sizing: border-box;
     border-bottom:1px solid white;
@@ -320,4 +322,43 @@ aside.sidebar ul {
     list-style: none;
     padding-left: 0;
     line-height: 2rem;
+}
+
+/*******************
+MEDIA QUIERIES
+*******************/
+@media screen and (min-width:1100px) {
+    header,
+    div.participation,
+    div.explanation,
+    div.requirements,
+    aside.sidebar {
+        margin:100px auto;
+    }
+}
+
+@media screen and (max-width:700px) {
+    header,
+    div.participation,
+    div.requirements,
+    div.explanation,
+    aside.sidebar {
+        margin:50px;
+    }
+    div.explanation {
+        margin-top:0;
+    }
+}
+
+@media screen and (max-width:650px) {
+    header,
+    div.participation,
+    div.explanation,
+    div.requirements,
+    aside.sidebar {
+        margin:20px;
+    }
+    div.explanation {
+        margin-top:0;
+    }
 }
