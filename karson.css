@@ -214,12 +214,14 @@ header h2::after {
 
 div.summary {
     color: #636363;
-    padding:    0
-                calc(100vw / 10 + 120px)
-                75vh
-                calc(100vw / 10 + 120px);
+    padding: 0;
+    margin:0 auto;
+    min-width:300px;
+    max-width:500px;
+    transition: margin padding-top .5s ease;
     font-size: 1rem;
     line-height: 1.5rem;
+    margin-bottom:75vh;
 }
 
 /*******************
@@ -355,6 +357,9 @@ MEDIA QUIERIES
     footer {
         margin: 50px 50px 0 50px;
         padding-bottom:50px;
+    }
+    div.summary {
+        padding-top:25px;
     }
 }
 
