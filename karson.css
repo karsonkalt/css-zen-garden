@@ -288,7 +288,7 @@ footer a {
 }
 
 footer a:hover {
-    background-color: rgba(255,255,255,.1);
+    background-color: rgba(255,255,255,.25);
 }
 
 aside.sidebar {
@@ -335,6 +335,10 @@ MEDIA QUIERIES
     aside.sidebar {
         margin:100px auto;
     }
+    footer {
+        margin: 100px auto 0 auto;
+        max-width:900px;
+    }
 }
 
 @media screen and (max-width:700px) {
@@ -348,6 +352,10 @@ MEDIA QUIERIES
     div.explanation {
         margin-top:0;
     }
+    footer {
+        margin: 50px 50px 0 50px;
+        padding-bottom:50px;
+    }
 }
 
 @media screen and (max-width:650px) {
@@ -360,5 +368,9 @@ MEDIA QUIERIES
     }
     div.explanation {
         margin-top:0;
+    }
+    footer {
+        margin: 20px 20px 0 20px;
+        padding-bottom:20px;
     }
 }
