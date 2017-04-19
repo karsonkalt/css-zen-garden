@@ -1,13 +1,13 @@
-/*******************
+/***************************
 IMPORTS
-*******************/
+***************************/
 @import url(https://necolas.github.io/normalize.css/3.0.3/normalize.css);
 
 @import url(https://fonts.googleapis.com/css?family=Inconsolata);
 
-/*******************
+/***************************
 KEYFRAMES
-*******************/
+***************************/
 @keyframes blink {
   0% { opacity:100%; }
   50% { opacity:0; }
@@ -20,9 +20,9 @@ KEYFRAMES
     100%{background-position:0% 50%}
 }
 
-/*******************
+/***************************
 UNIVERSAL
-*******************/
+***************************/
 abbr[title] {
     border-bottom: none;
 }
@@ -46,9 +46,9 @@ p {
     line-height: 1.5rem
 }
 
-/*******************
+/***************************
 BACKGROUND GRADIENT
-*******************/
+***************************/
 section.intro {
     background-image:
         linear-gradient(
@@ -91,9 +91,9 @@ div.main {
     animation: color_pulse 30s ease infinite;
 }
 
-/*******************
+/***************************
 WINDOWS
-*******************/
+***************************/
 header,
 div.participation,
 div.explanation,
@@ -146,9 +146,9 @@ div.requirements p {
     padding-left: 1rem;
 }
 
-/*******************
-SPACED PARAGRAPHS
-*******************/
+/***************************
+PARAGRAPHS
+***************************/
 
 div.preamble {
     background-size:150%;
@@ -193,9 +193,9 @@ div.benefits {
     color:white;
 }
 
-/*******************
+/***************************
 HEADER
-*******************/
+***************************/
 header h1,
 header h2 {
     display: inline;
@@ -224,9 +224,9 @@ div.summary {
     margin-bottom:75vh;
 }
 
-/*******************
+/***************************
 LINKS
-*******************/
+***************************/
 div.summary a,
 div.participation a,
 div.requirements a,
@@ -271,9 +271,9 @@ aside.sidebar a:first-of-type {
     padding-left: 0;
 }
 
-/*******************
+/***************************
 FOOTER
-*******************/
+***************************/
 footer {
     display:flex;
     justify-content: space-between;
@@ -308,9 +308,9 @@ div.zen-resources {
     padding-top: 100px;
 }
 
-/*******************
-DESIGN SELECTION
-*******************/
+/***************************
+DESIGN
+***************************/
 
 div.design-selection ul {
     color: #636363;
@@ -326,9 +326,9 @@ aside.sidebar ul {
     line-height: 2rem;
 }
 
-/*******************
-MEDIA QUIERIES
-*******************/
+/***************************
+MEDIA QUERIES
+***************************/
 @media screen and (min-width:1100px) {
     header,
     div.participation,
